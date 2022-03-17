@@ -1,0 +1,356 @@
+/* Fonts */
+@font-face {
+    font-family: "Railway-regular";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Railway-Bold";
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Railway-Semi-Bold";
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Railway-black";
+    src: url(../fonts/Raleway-Black.ttf);
+}
+
+@font-face {
+    font-family: "Railway-extra-Bold";
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Railway-Medium";
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+
+/* Chrome Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Colors */
+:root {
+
+    --primary: #eebf00;
+    --secondary: #232B38;
+    --ternary: #6C6C6C;
+    --danger: #FE4545;
+    --pure: #FEFEFE;
+    --light: #F0F0F0;
+    --heaven: #FFFFFF;
+    --footer: #2D333F;
+}
+
+
+/* Sizes */
+
+.container {
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 922px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+
+
+/* Class Shortcut */
+
+.flex {
+    display: flex;
+}
+
+.just {
+    justify-content: space-between;
+}
+
+.items {
+    align-items: center;
+}
+
+
+
+/* Header */
+
+
+body {}
+
+header.topbar {
+    background: var(--secondary);
+    color: var(--pure);
+    font-family: "Railway-Semi-Bold";
+    padding: 0px 0px;
+
+}
+
+header.topbar .right-topbar a {
+    color: var(--pure);
+    text-decoration: none;
+    align-items: center;
+
+}
+
+header.topbar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header.topbar .container .right-topbar {
+    display: flex;
+}
+
+.left-topbar a {
+    margin-right: 10px;
+}
+
+.divider {
+    padding: 0px 20px;
+}
+
+.right-topbar img {
+    margin: 0px 10px;
+}
+
+
+/* Section 02 */
+
+
+.nav-container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+
+}
+.nav-container ul{
+    list-style: none;
+}
+
+
+.text01{
+    font-family: "Railway-black";
+    margin-bottom: 10px;
+    letter-spacing: .4px;
+}
+.text02{
+    font-family: "Railway-regular";
+    letter-spacing: .6px;
+    color: var(--ternary)
+}
+.Contact {
+    display: flex;
+    align-items: center;
+}
+.Contact img{
+    margin-right: 20px;
+}
+.time{
+    display: flex;
+    align-content: center;
+
+}
+.time img{
+    margin-right: 20px;
+    width: 20px;
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+/* Section 03 */
+
+
+.menubar-container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+
+
+}   
+
+.menubar-container::after{
+    content: "";
+    background-image: url(../icons/shadow.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 53px;
+    width: 100%;
+    bottom: -44px;
+    
+}
+
+.menubar-container ul{
+    list-style: none;
+    
+
+}
+
+
+.menubar-container ul li a{
+    
+    text-decoration: none;
+    font-family: "Railway-Bold";
+    padding: 20px 25px;
+    font-size: 14px;
+    color: var(--secondary);
+    transition: .2s;
+    
+   
+    
+
+}
+
+.menubar-container ul li a:hover{
+ background: var(--primary);
+ color: var(--pure);
+ border-radius: 2px;
+
+
+}
+
+.menubar-container ul li{
+    padding-top: 17px;
+}
+
+
+
+/* Section 04 */
+
+
+.Banner{
+    height: 600px;
+    background-image: url(../images/hero.png);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding-right: 10px;
+    position: relative;
+    padding-top: 200px;
+
+}
+
+
+.header-container{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+
+.header-container ul{
+    list-style: none;
+}
+
+.welcome span{
+    font-family: "Railway-Bold";
+    color: var(--secondary);
+    margin: 0px 20px;
+    margin-left: 0px;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.world-text{
+    font-family: "Railway-extra-Bold";
+    color: var(--secondary);
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.world-text span{
+    color: var(--primary);
+}
+
+.ptext{
+    font-family: "Railway-Medium";
+
+}
+
+.btn{
+    padding: 10px 21px;
+    border-radius: 4px;
+    border: none;
+    font-family: "Railway-Semi-Bold";
+    cursor: pointer;
+    transition: .5s;
+    border: 1px solid transparent;
+    margin: 20px 11px;
+    margin-left: 1px;
+}
+
+.btnGray{
+    background: var(--secondary);
+    color: var(--heaven);
+}
+
+.btnGray:hover{
+    background: var(--heaven);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+
+.btnyellow{
+    background: var(--primary);
+    color: var(--heaven);
+}
+
+.btnyellow:hover{
+
+    background: var(--heaven);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.headerimg{
+    position: absolute;
+    top: -60px;
+    right: -4px;
+
+}
